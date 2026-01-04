@@ -8,18 +8,19 @@ and GitOps-based continuous delivery with ArgoCD.
 
 ## Repository Structure
 
+```text
 eks terraform install/
 └── eks-install/
     └── Terraform code for provisioning AWS EKS cluster
 
 project/
-├── .github/workflows
+├── .github/workflows/
 │   └── ci.yaml              # CI pipeline
 ├── kubernetes manifests     # Kubernetes deployment manifests
 ├── src                      # Sample application source
-└── internal                 # Supporting modules
+├── internal                 # Supporting modules and tooling
+└── README.md
 
----
 
 ## Workflow Overview
 
